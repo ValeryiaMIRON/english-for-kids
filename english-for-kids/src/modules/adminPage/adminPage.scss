@@ -1,0 +1,52 @@
+.admin-page-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 1024px;
+}
+.case {
+    min-height: 927px;
+    background: #e5e5e5;
+}
+.admin-page-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 97px;
+    background: #00bf82;
+}
+
+.admin-page-link-item {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    font-family: 'Roboto';
+    color: #ffffff;
+    transition: all 0.2s;
+}
+
+.admin-page-wrapper-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 241px;
+    height: 61px;
+    background: #00bf82;
+    cursor: pointer;
+}
+.admin-page-link-item:hover {
+    font-size: 30px;
+}
+
+.admin-page-wrapper-link:last-child {
+    position: absolute;
+    right: 0;
+}
+.active-link {
+    text-decoration: underline;
+}
+
+.admin-page-hidden {
+    display: none;
+}

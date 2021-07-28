@@ -1,0 +1,32 @@
+.btn-container {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    padding: 20px 25px;
+    font-size: 24px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 650px;
+    height: 65px;
+    background: linear-gradient(40deg, #ffd86f, #fc6262);
+    color: #fff;
+    border-radius: 10px;
+    border-width: 1px;
+    transition: 0.3s;
+}
+
+.none {
+    display: none;
+}
+
+.repeat {
+    width: 65px;
+    font-size: 0;
+    background-image: url(../../assets/img/rotate.svg), linear-gradient(40deg, #d4461b, #dfdb19);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 32px 32px, cover;
+    background-position: 50%;
+}

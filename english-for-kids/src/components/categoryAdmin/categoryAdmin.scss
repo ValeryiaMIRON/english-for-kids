@@ -1,0 +1,45 @@
+.wrapper-category-admin {
+    width: 361px;
+    height: 244px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 135px;
+    padding-top: 23px;
+}
+
+.name-category {
+    width: 253px;
+    height: 34.49px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    margin-left: 130px;
+}
+
+.btn-admin-update,
+.btn-admin-add-word {
+    width: 135.03px;
+    height: 30.76px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    // display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 128px;
+    color: #00bf82;
+    border: 2px solid #00bf82;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.btn-admin-update {
+    margin-right: 41px;
+    margin-left: 22px;
+}

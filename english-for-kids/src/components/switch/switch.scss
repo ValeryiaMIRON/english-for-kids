@@ -1,0 +1,110 @@
+@import '../../constants/constants.scss';
+.switch-wrapper {
+    position: absolute;
+    top: 42px;
+    right: 170px;
+}
+
+.switch,
+.switch-input {
+    position: absolute;
+}
+
+.switch-input {
+    display: none;
+}
+
+.switch {
+    display: block;
+    width: 120px;
+    height: 40px;
+    padding: 3px;
+    border-radius: 7px;
+    box-shadow: inset 0 -1px #fff, inset 0 1px 1px rgb(0 0 0 / 5%);
+    cursor: pointer;
+}
+
+.switch-input:checked ~ .switch-span {
+    background: $GRADIENT_MENU;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 15%), inset 0 0 3px rgb(0 0 0 / 20%);
+}
+
+.switch-span {
+    position: relative;
+    display: block;
+    height: inherit;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+    background: $MENU_PLAY;
+    border-radius: inherit;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 12%), inset 0 0 2px rgb(0 0 0 / 15%);
+    transition: 0.15s ease-out;
+}
+
+.switch-input:checked ~ .switch-span:before {
+    opacity: 0;
+}
+
+.switch-span:before {
+    content: attr(data-off);
+    right: 15px;
+    color: $WHITE_COLOR;
+    text-shadow: 0 1px hsl(0deg 0% 100% / 50%);
+}
+
+.switch-span:after,
+.switch-span:before {
+    position: absolute;
+    top: 0;
+    transition: inherit;
+}
+
+.switch-input:checked ~ .switch-span:after {
+    opacity: 1;
+}
+
+.switch-span:after {
+    content: attr(data-on);
+    left: 15px;
+    color: $WHITE_COLOR;
+    text-shadow: 0 1px rgb(0 0 0 / 20%);
+    opacity: 0;
+}
+
+.switch-span:after,
+.switch-span:before {
+    position: absolute;
+    top: 0;
+    transition: inherit;
+}
+
+.switch-input:checked ~ .switch-handle {
+    left: 85px;
+    box-shadow: -1px 1px 5px rgb(0 0 0 / 20%);
+}
+
+.switch-handle {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 33px;
+    height: 33px;
+    background: $WHITE_COLOR;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);
+    transition: left 0.15s ease-out;
+}
+
+.switch-handle:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -6px;
+    width: 12px;
+    height: 12px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: inset 0 1px rgb(0 0 0 / 2%);
+}

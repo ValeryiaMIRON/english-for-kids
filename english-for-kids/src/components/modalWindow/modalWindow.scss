@@ -1,0 +1,112 @@
+.modal-window-form {
+    position: fixed;
+    top: calc(50vh - 285.5px);
+    left: calc(50vw - 406px);
+    z-index: 10;
+    z-index: 10;
+    width: 812px;
+    height: 571px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.07);
+}
+
+.modal-window-item {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    font-size: 36px;
+    line-height: 56px;
+    line-height: 145%;
+    font-family: 'Roboto';
+    text-align: center;
+    color: #000000;
+}
+
+.modal-window-label {
+    display: flex;
+    align-items: center;
+    margin-left: 118px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: Roboto;
+    color: #3f51b5;
+}
+
+.modal-window-input {
+    display: block;
+    width: 516px;
+    height: 70px;
+    margin: 3px 0 26px 118px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 56px;
+    font-family: 'Roboto';
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.modal-window-input::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 24px;
+    font-family: 'Roboto';
+    color: #3d3d3d;
+}
+
+.modal-window-btn-cancel,
+.modal-window-btn-login {
+    box-sizing: border-box;
+    width: 248px;
+    height: 60px;
+    font-size: 22px;
+    font-family: 'Roboto';
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-window-btn-cancel {
+    margin: 0 77px 0 113px;
+    background: #e53935;
+}
+
+.modal-window-btn-cancel:hover {
+    background: #c28f8d;
+}
+
+.modal-window-btn-login {
+    background: #4fbe79;
+}
+
+.modal-window-btn-login:hover {
+    background: #8adba9;
+}
+
+.modal-window-wrapper-btn {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 105px;
+    background: #4fbe79;
+}
+
+.cover-login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,48 @@
+@import '../../constants/constants.scss';
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    justify-content: center;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.card img {
+    width: 140px;
+    height: 140px;
+    margin: 30px auto;
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 280px;
+    margin: 20px 25px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #212529;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    text-decoration: none;
+    background: $GRADIENT;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgb(0 0 0 / 40%);
+}
+
+.card--play {
+    background: $GRADIENT_PLAY;
+}
+
+.menu-play {
+    background: $MENU_PLAY;
+}

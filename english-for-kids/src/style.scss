@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-position: center 180px;
+    overflow-x: hidden;
+}
+
+.notScrollable {
+    visibility: hidden;
+}
+
+.successImg {
+    background-image: url(./assets/img/success.jpg);
+    color: black;
+    text-align: center;
+    font-size: 100px;
+}
+
+.errorImg {
+    background-image: url(./assets/img/failure.jpg);
+    color: red;
+    text-align: center;
+    font-size: 100px;
+}
